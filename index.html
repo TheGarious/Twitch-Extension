@@ -1,5 +1,5 @@
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 <style>
 	body {
@@ -7,6 +7,7 @@
 		font-family: 'Open Sans', sans-serif;
 		color:white;
 		text-align: center;
+    width: 200px;
 	}
 
 	.title {
@@ -27,7 +28,7 @@
 	a {
 		color:white;
 	}
-	
+
 	.fa-facebook,
 	.fa-twitter,
 	.fa-twitch {
@@ -38,6 +39,25 @@
 		color:#34495e;
 	}
 </style>
-<div id="content">Le live est actif</p>
 
+<div id="content"></div>
+
+<div id="button-social">
+  <a class='facebook-button fa-stack fa-lg'>
+      <i class='fa fa-circle fa-stack-2x'></i>
+      <i class='fa fa-facebook fa-stack-1x' aria-hidden='true'></i>
+  </a>
+  <a class='twitter-button fa-stack fa-lg'>
+      <i class='fa fa-circle fa-stack-2x'></i>
+      <i class='fa fa-twitter fa-stack-1x' aria-hidden='true'></i>
+  </a>
+  <a class='twitch-button fa-stack fa-lg'>
+      <i class='fa fa-circle fa-stack-2x'></i>
+      <i class='fa fa-twitch fa-stack-1x' aria-hidden='true'></i>
+  </a>
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
 <script src="app.js"></script>
+<script src="background.js"></script>
+<script src="js/event.js"></script>

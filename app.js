@@ -11,22 +11,12 @@ xhr.onreadystatechange = function(channel) {
         if(xhrContent.readyState == 4) {
           var data = JSON.parse(xhrContent.responseText)
           console.log(data);
-          elm.innerHTML = '<div>' 
+          elm.innerHTML = '<div>'
           + "<div class='title'>Stream Offline</div>"
           +"<hr><div><img class='logo' src="+data["logo"]+"></img>"
-          +"<div class='game'>" + data["game"].charAt(0).toUpperCase() + data["game"].substring(1).toLowerCase() +  " </div>"
-          +"<a href='#' class='fa-stack fa-lg'>"
-          +"    <i class='fa fa-circle fa-stack-2x'></i>"
-          +"    <i class='fa fa-facebook fa-stack-1x' aria-hidden='true'></i>"
-          +"</a>"
-          +"<a href='#' class='fa-stack fa-lg'>"
-          +"    <i class='fa fa-circle fa-stack-2x'></i>"
-          +"    <i class='fa fa-twitter fa-stack-1x' aria-hidden='true'></i>"
-          +"</a>"
-          +"<a href='#' class='fa-stack fa-lg'>"
-          +"    <i class='fa fa-circle fa-stack-2x'></i>"
-          +"    <i class='fa fa-twitch fa-stack-1x' aria-hidden='true'></i>"
-          +"</a>"
+          +"<div class='game'>" + data["game"].charAt(0).toUpperCase() + data["game"].substring(1).toLowerCase()
+          +  " </div>"
+
         }
       }
       xhrContent.send()

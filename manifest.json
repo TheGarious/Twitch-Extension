@@ -10,7 +10,11 @@
  "icons": {
   "64" : "img/icon_64.png"
 },
- "background": {
-    "scripts": ["background.js"]
- }
+"permissions" : [
+    "notifications"
+  ],
+  "background": {
+          "scripts": ["background.js"],
+          "persistent": false
+      }
 }
