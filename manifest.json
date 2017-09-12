@@ -1,7 +1,7 @@
 {
  "manifest_version": 2,
  "name": "TheGariousTv Extension",
- "description": "Vous informe si il y a un live",
+ "description": "TheGariousTv Extension Live Stream Sur Twitch",
  "version": "1.0",
 
  "browser_action": {

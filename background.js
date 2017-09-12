@@ -1,6 +1,6 @@
-var tickRate = 60000 // On vérifiera l'api toutes les minutes
+var tickRate = 60000
 
-/*function checkStream() {
+function checkStream() {
   var xhr = new XMLHttpRequest()
   xhr.open("GET", "https://api.twitch.tv/kraken/streams/GamishouTv?client_id=fw2ccsj5a5by6da4u9v1hxpf1mv4vj", true)
   xhr.onreadystatechange = function () {
@@ -18,11 +18,11 @@ var tickRate = 60000 // On vérifiera l'api toutes les minutes
   }
   xhr.send()
 }
-*/
+
 // On lance la fonction dès le démarrage
-//checkStream()
+checkStream()
 
-
+/**
 chrome.notifications.create(
     'name-for-notification',{
     type: 'basic',
@@ -31,6 +31,7 @@ chrome.notifications.create(
     message: "hello there!"
     },
 
+
 function() {}
 
-);
+); **/

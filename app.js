@@ -11,18 +11,21 @@ xhr.onreadystatechange = function(channel) {
         if(xhrContent.readyState == 4) {
           var data = JSON.parse(xhrContent.responseText)
           console.log(data);
-          elm.innerHTML = '<div>'
-          + "<div class='title'>Stream Offline</div>"
-          +"<hr><div><img class='logo' src="+data["logo"]+"></img>"
-          +"<div class='game'>" + data["game"].charAt(0).toUpperCase() + data["game"].substring(1).toLowerCase()
-          +  " </div>"
+            elm.innerHTML = '<div>'
+                + "<div class='title'>Stream Offline</div>"
+                +"<hr><div><img class='logo' src="+data["logo"]+"></img>"
+                +"<div class='game'>" + ""
+                +  " </div>"
 
         }
       }
       xhrContent.send()
     }else{
-      elm.style.color = "green"
-      elm.innerHTML = "<button>coucou</button>"
+        elm.innerHTML = '<div>'
+            + "<div class='title'>Stream Online</div>"
+            +"<hr><div><img class='logo' src="+data["logo"]+"></img>"
+            +"<div class='game'>" + data["game"].charAt(0).toUpperCase() + data["game"].substring(1).toLowerCase()
+            +  " </div>"
     }
   }
 }
