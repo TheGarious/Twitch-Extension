@@ -1,11 +1,12 @@
 {
  "manifest_version": 2,
- "name": "TheGariousTv Extension",
- "description": "TheGariousTv Extension Live Stream Sur Twitch",
+ "name": "Twitch Extension",
+ "author": "gary.houbre@gmail.com",
+ "description": "Twitch Extension",
  "version": "1.0",
 
  "browser_action": {
-  "default_popup": "index.html"
+  "default_popup": "extension.html"
  },
  "icons": {
   "64" : "img/icon_64.png"
